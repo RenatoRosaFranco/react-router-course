@@ -20,7 +20,7 @@ class PersonList extends Component {
 		return(
 			<div class='jumbotron'>
 				<div class='container'>
-					<h2>Membros</h2>
+					<h2><i class='glyphicon glyphicon-rocket'></i> Membros</h2>
 					<p>Acompanhe a nossa tabela de membros.</p>
 					<hr/>
 
@@ -32,6 +32,7 @@ class PersonList extends Component {
 								<td>Username</td>
 								<td>Street</td>
 								<td>City</td>
+								<td>Phone</td>
 							</tr>
 						</thead>
 						<tbody>
@@ -42,6 +43,7 @@ class PersonList extends Component {
 								 	<td>{person.username}</td>
 								 	<td>{person.address.street}</td>
 								 	<td><a href=''>{person.address.city}</a></td>
+								 	<td>{person.phone}</td>
 								 </tr>
 								)}
 						</tbody>
