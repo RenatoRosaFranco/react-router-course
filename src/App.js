@@ -10,6 +10,7 @@ import Error      from  './components/Error';
 import Navigation from  './components/Navigation';
 import Project    from  './components/Project';
 import PersonList from  './components/PersonList';
+import Footer     from  './components/Footer';
 
 class App extends Component {
   render() {
@@ -25,8 +26,9 @@ class App extends Component {
             <Route path='/contact' component={Contact}/>
             <Route component={Error} />
           </Switch>
+          <Footer/>
         </div>
-      </BrowserRouter> 
+      </BrowserRouter>
     );
   }
 }
