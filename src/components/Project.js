@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-class Contact extends Component {
-	render () {
+class Project extends Component {
+	render(){
 		return(
 			<div class='jumbotron'>
 				<div class='container'>
-					<p>Contact page.</p>
+					<p>Parametro</p>
 				</div>
 			</div>
 		);
 	}
 }
 
-export default Contact;
+export default Project;

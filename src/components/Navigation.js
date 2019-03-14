@@ -4,11 +4,22 @@ import { NavLink } from 'react-router-dom';
 class Navigation extends Component {
 	render() {
 		return(
-			<div>
-				<NavLink to="/">Home</NavLink>
-				<NavLink to="/about">About</NavLink>
-				<NavLink to="/contact">Contact</NavLink>
-			</div>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">
+		        <img alt="React" src="..." />
+		      </a>
+
+		 			<ul class="nav navbar-nav navbar-right">
+		        <li><NavLink to="/">Home</NavLink></li>
+		        <li><NavLink to="/about">Sobre</NavLink></li>
+		        <li><NavLink to="/project/1">O Projeto</NavLink></li>
+		        <li><NavLink to="/contact">Contato</NavLink></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
 		);
 	}
 }

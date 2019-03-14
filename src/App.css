@@ -19,6 +19,15 @@
   color: white;
 }
 
+.jumbotron {
+ position: relative;
+ margin-top: -20px !important;
+}
+
+.navbar-default {
+  background-color: #EEE;
+}
+
 .App-link {
   color: #61dafb;
 }
