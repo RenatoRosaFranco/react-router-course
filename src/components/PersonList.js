@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink} from 'react-router-dom';
 import axios from 'axios';
 
 class PersonList extends Component {
@@ -21,7 +22,11 @@ class PersonList extends Component {
 			<div class='jumbotron'>
 				<div class='container'>
 					<h2><i class='glyphicon glyphicon-rocket'></i> Membros</h2>
-					<p>Acompanhe a nossa tabela de membros.</p>
+					<p>Acompanhe a nossa tabela de membros.</p><br/>
+					<ul class='breadcrumb'>
+						<li><NavLink to='/'>Home</NavLink></li>
+						<li><NavLink to='/membros'>Membros</NavLink></li>
+					</ul>
 					<hr/>
 
 					<table class='table'>
